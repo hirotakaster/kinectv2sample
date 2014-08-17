@@ -17,7 +17,6 @@ void ofApp::update(){
 	body = this->kinect.getBodyScaleImage();
 	color = this->kinect.getColorImage();
 
-	/*
 	// get joint points
 	points.clear();
 	std::vector<JointUser> usr = this->kinect.getJointList();
@@ -32,7 +31,6 @@ void ofApp::update(){
 			}
 		}
 	}
-	*/
 }
 
 //--------------------------------------------------------------
@@ -42,10 +40,8 @@ void ofApp::draw(){
 	body.draw(0, depth.getHeight(), body.getWidth(), body.getHeight());
 	
 	// draw joint points
-	/*
 	for (int i = 0; i < points.size(); i++)
 		ofCircle(points[i], 2);
-	*/
 }
 
 //--------------------------------------------------------------
